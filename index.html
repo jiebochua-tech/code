@@ -34,15 +34,15 @@
 
     <!-- 2. 段落介绍（贴合背景的白色半透明卡片） -->
     <div style="background-color: rgba(255, 255, 255, 0.45); 
-        padding: 20px; 
-        border-radius: 20px; 
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15)，
-                    0 0 30px rgba(255, 255, 255, 0.4)
-                    0 10px 30px rgba(0, 0, 0, 0.15); 
-        margin-bottom: 20px; 
-        backdrop-filter: blur(8px); 
-        -webkit-backdrop-filter: blur(6px); 
-        border: 1px solid rgba(255, 255, 255, 0.45);">
+        padding: 24px; 
+        border-radius: 30px; 
+        /* 从内向外扩散的软棉花雾气 */
+        box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.7),     /* 贴身的浓郁白雾 */
+                    0 0 50px 15px rgba(255, 255, 255, 0.4),    /* 向外融化的虚化白雾 */
+                    0 12px 30px rgba(255, 140, 80, 0.25); 
+        margin-bottom: 25px; 
+        backdrop-filter: blur(12px); 
+        -webkit-backdrop-filter: blur(12px); ">
         
         <!-- 渐变色彩文字 -->
         <p style="font-size: 20px; font-weight: bold; background-image: linear-gradient(to right, red, blue); -webkit-background-clip: text; color: transparent; display: inline-block; margin-top: 0; margin-bottom: 10px;">你好！我是一名 14 岁的中学生，今天是我开始学习 HTML 和网页编程的第一天。</p>
