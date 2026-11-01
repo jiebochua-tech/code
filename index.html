@@ -5,49 +5,50 @@
     <title>我的第一个网页</title>
     <style> 
         body {
-              background-image: url('minecraft.jpg');
-              background-size: cover;
-        font-family: sans-serif; /*改变全文字体*/
-						 max-width: 800px; /*限制内容长度*/
-        margin: 0 auto; /*水平居中内容*/
-        padding: 20px; /*给页面四周增加 20 像素的内边距*/
-             }
+            background-image: url('minecraft.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: sans-serif; /*改变全文字体*/
+            max-width: 800px;        /*限制内容长度*/
+            margin: 0 auto;         /*水平居中内容*/
+            padding: 20px;          /*给页面四周增加 20 像素的内边距*/
+        }
     </style>
 </head>
 <body>
 
-    <!-- 1. 网页主标题（卡片包覆） -->
-<div style="background-color: pink; padding: 20px;
-border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; margin-bottom: 20px;">
-    <h1 style="color: blue; -webkit-text-stroke: 3px white; paint-order: stroke fill; margin: 0;">Hello GitHub! 这是我的第一个 HTML 网页 </h1>
-</div>
+    <!-- 1. 网页主标题（粉色卡片） -->
+    <div style="background-color: pink; padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; margin-bottom: 20px;">
+        <h1 style="color: blue; -webkit-text-stroke: 3px white; paint-order: stroke fill; margin: 0;">Hello GitHub! 这是我的第一个 HTML 网页 </h1>
+    </div>
 
+    <!-- 2. 段落介绍（贴合背景的白色半透明卡片） -->
+    <div style="background-color: rgba(255, 255, 255, 0.75); padding: 20px; border-radius: 15px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); margin-bottom: 20px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.5);">
+        <!-- 渐变色彩文字 -->
+        <p style="font-size: 20px; font-weight: bold; background-image: linear-gradient(to right, red, blue); -webkit-background-clip: text; color: transparent; display: inline-block; margin-top: 0; margin-bottom: 10px;">你好！我是一名 14 岁的中学生，今天是我开始学习 HTML 和网页编程的第一天。</p>
+        <!-- 普通说明文字 -->
+        <p style="margin: 0; color: #222;">我决定在 GitHub 上记录我的代码和成长轨迹！</p>
+    </div>
 
-    <!-- 2. 段落介绍（白色半透明卡片包覆） -->
-<!-- 2. 段落介绍（贴合背景的白色半透明卡片） -->
-<div style="background-color: rgba(255, 255, 255, 0.75); padding: 20px; border-radius: 15px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); margin-bottom: 20px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.5);">
-    <!-- 渐变色彩文字 -->
-    <p style="font-size: 20px; font-weight: bold; background-image: linear-gradient(to right, red, blue); -webkit-background-clip: text; color: transparent; display: inline-block; margin-top: 0; margin-bottom: 10px;">你好！我是一名 14 岁的中学生，今天是我开始学习 HTML 和网页编程的第一天。</p>
-    <!-- 普通说明文字 -->
-    <p style="margin: 0; color: #222;">我决定在 GitHub 上记录我的代码和成长轨迹！</p>
-</div>
     <!-- 3. 学习目标列表 -->
-<div style="background-color: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
-    <h2 style="margin-top: 0; color: #333;">我的 HTML 学习目标：</h2>
-    <!-- 给 <ul> 加上统一缩进和更舒服的行高 -->
-    <ul style="padding-left: 20px; line-height: 1.8; margin-bottom: 0;">
-        <li>学会制作简单的个人网站</li>
-        <li>学会给网页添加好看的样式（CSS）</li>
-        <li>每天在 GitHub 上提交代码打卡</li>
-    </ul>
-</div>
-    <!-- 4. 链接 -->
-    <p style="color:white">你可以点击这里访问我的 <a href="https://github.com/jiebochua-tech">GitHub 主页</a>。</p>
-<button
-    onclick="alert('加油！')"
-    style="background-image: linear-gradient(to right, red, blue); color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-size: 16px">
-  点击按钮鼓励自己  
-</button>
+    <div style="background-color: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+        <h2 style="margin-top: 0; color: #333;">我的 HTML 学习目标：</h2>
+        <!-- 给 <ul> 加上统一缩进和更舒服的行高 -->
+        <ul style="padding-left: 20px; line-height: 1.8; margin-bottom: 0;">
+            <li>学会制作简单的个人网站</li>
+            <li>学会给网页添加好看的样式（CSS）</li>
+            <li>每天在 GitHub 上提交代码打卡</li>
+        </ul>
+    </div>
+
+    <!-- 4. 链接与互动按钮卡片 -->
+    <div style="background-color: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-align: center;">
+        <p style="margin-top: 0; margin-bottom: 15px; color: #333;">你可以点击这里访问我的 <a href="https://github.com/jiebochua-tech" style="color: #007bff; text-decoration: none; font-weight: bold;">GitHub 主页</a>。</p>
+        <button onclick="alert('加油！')" style="background-image: linear-gradient(to right, red, blue); color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-size: 16px;">
+            点击按钮鼓励自己
+        </button>
+    </div>
 
 </body>
 </html>
