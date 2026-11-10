@@ -1,2 +1,2 @@
 # MY FIRST REPOSITORY
-## Hi! I'm new on coding!
+Hi! This is my first GitHub repository, I'm new on coding!
